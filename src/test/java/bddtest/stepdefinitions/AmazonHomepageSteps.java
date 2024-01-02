@@ -16,7 +16,7 @@ import io.cucumber.java.en.When;
 
 public class AmazonHomepageSteps {
 
-	String driverPath ="C:\\WaheedTraining\\phase2-cucumber-maven-test-27-12-2023\\src\\test\\resources\\drivers\\windows\\chromedriver.exe";
+	String driverPath = "C:\\Users\\PC\\eclipse-workspace\\phase2-bdd-cucumber-maven-test-27-12-2023\\src\\test\\resources\\drivers\\windows\\chromedriver.exe";
 	String siteUrl = "https://www.amazon.in/";
 	WebDriver driver;
 	
