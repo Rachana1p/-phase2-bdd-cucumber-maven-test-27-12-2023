@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="bddtest.testrunner.TestRunner" time="119.234" tests="41" errors="7" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\PC\eclipse-workspace\phase2-bdd-cucumber-maven-test-27-12-2023\target\test-classes;C:\Users\PC\eclipse-workspace\phase2-bdd-cucumber-maven-test-27-12-2023\target\classes;C:\Users\PC\.m2\repository\io\cucumber\cucumber-java\7.15.0\cucumber-java-7.15.0.jar;C:\Users\PC\.m2\repository\io\cucumber\cucumber-core\7.15.0\cucumber-core-7.15.0.jar;C:\Users\PC\.m2\repository\io\cucumber\cucumber-gherkin\7.15.0\cucumber-gherkin-7.15.0.jar;C:\Users\PC\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.15.0\cucumber-gherkin-messages-7.15.0.jar;C:\Users\PC\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\PC\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\PC\.m2\repository\io\cucumber\tag-expressions\6.0.0\tag-expressions-6.0.0.jar;C:\Users\PC\.m2\repository\io\cucumber\cucumber-expressions\17.0.1\cucumber-expressions-17.0.1.jar;C:\Users\PC\.m2\repository\io\cucumber\datatable\7.15.0\datatable-7.15.0.jar;C:\Users\PC\.m2\repository\io\cucumber\cucumber-plugin\7.15.0\cucumber-plugin-7.15.0.jar;C:\Users\PC\.m2\repository\io\cucumber\docstring\7.15.0\docstring-7.15.0.jar;C:\Users\PC\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\PC\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\PC\.m2\repository\io\cucumber\ci-environment\10.0.0\ci-environment-10.0.0.jar;C:\Users\PC\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\PC\.m2\repository\io\cucumber\cucumber-junit\7.15.0\cucumber-junit-7.15.0.jar;C:\Users\PC\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\PC\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-java\4.15.0\selenium-java-4.15.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-api\4.15.0\selenium-api-4.15.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.15.0\selenium-chrome-driver-4.15.0.jar;C:\Users\PC\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.15.0\selenium-chromium-driver-4.15.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-json\4.15.0\selenium-json-4.15.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.15.0\selenium-manager-4.15.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v117\4.15.0\selenium-devtools-v117-4.15.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v118\4.15.0\selenium-devtools-v118-4.15.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v119\4.15.0\selenium-devtools-v119-4.15.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.15.0\selenium-devtools-v85-4.15.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.15.0\selenium-edge-driver-4.15.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.15.0\selenium-firefox-driver-4.15.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-http\4.15.0\selenium-http-4.15.0.jar;C:\Users\PC\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.15.0\selenium-ie-driver-4.15.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.15.0\selenium-remote-driver-4.15.0.jar;C:\Users\PC\.m2\repository\com\google\guava\guava\32.1.2-jre\guava-32.1.2-jre.jar;C:\Users\PC\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\PC\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\PC\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\PC\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\PC\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\PC\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-api\1.28.0\opentelemetry-api-1.28.0.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-context\1.28.0\opentelemetry-context-1.28.0.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.28.0\opentelemetry-exporter-logging-1.28.0.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.28.0\opentelemetry-sdk-metrics-1.28.0.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.28.0-alpha\opentelemetry-extension-incubator-1.28.0-alpha.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.28.0\opentelemetry-sdk-logs-1.28.0.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.28.0\opentelemetry-sdk-common-1.28.0.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.28.0\opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.28.0\opentelemetry-sdk-extension-autoconfigure-1.28.0.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.28.0-alpha\opentelemetry-api-events-1.28.0-alpha.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.28.0\opentelemetry-sdk-trace-1.28.0.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.28.0\opentelemetry-sdk-1.28.0.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\PC\.m2\repository\net\bytebuddy\byte-buddy\1.14.5\byte-buddy-1.14.5.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-os\4.15.0\selenium-os-4.15.0.jar;C:\Users\PC\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.15.0\selenium-safari-driver-4.15.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-support\4.15.0\selenium-support-4.15.0.jar;C:\Users\PC\.m2\repository\com\vimalselvam\cucumber-extentsreport\3.0.2\cucumber-extentsreport-3.0.2.jar;C:\Users\PC\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\PC\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\PC\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\PC\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\PC\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\PC\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\PC\.m2\repository\tech\grasshopper\extentreports-cucumber7-adapter\1.14.0\extentreports-cucumber7-adapter-1.14.0.jar;C:\Users\PC\.m2\repository\tech\grasshopper\extent-pdf-report\2.12.0\extent-pdf-report-2.12.0.jar;C:\Users\PC\.m2\repository\tech\grasshopper\cucumber-pdf-report\2.14.0\cucumber-pdf-report-2.14.0.jar;C:\Users\PC\.m2\repository\org\apache\pdfbox\pdfbox\2.0.26\pdfbox-2.0.26.jar;C:\Users\PC\.m2\repository\org\apache\pdfbox\fontbox\2.0.26\fontbox-2.0.26.jar;C:\Users\PC\.m2\repository\org\knowm\xchart\xchart\3.8.0\xchart-3.8.0.jar;C:\Users\PC\.m2\repository\de\erichseifert\vectorgraphics2d\VectorGraphics2D\0.13\VectorGraphics2D-0.13.jar;C:\Users\PC\.m2\repository\de\rototor\pdfbox\graphics2d\0.30\graphics2d-0.30.jar;C:\Users\PC\.m2\repository\com\madgag\animated-gif-lib\1.4\animated-gif-lib-1.4.jar;C:\Users\PC\.m2\repository\org\yaml\snakeyaml\2.0\snakeyaml-2.0.jar;C:\Users\PC\.m2\repository\tech\grasshopper\table-layout\1.5.1\table-layout-1.5.1.jar;C:\Users\PC\.m2\repository\tech\grasshopper\rest-assured-cucumber-pdf-report\1.5.0\rest-assured-cucumber-pdf-report-1.5.0.jar;C:\Users\PC\.m2\repository\org\jsoup\jsoup\1.15.3\jsoup-1.15.3.jar;C:\Users\PC\.m2\repository\com\aventstack\klov-reporter\5.1.0\klov-reporter-5.1.0.jar;C:\Users\PC\.m2\repository\org\mongodb\mongodb-driver\3.6.4\mongodb-driver-3.6.4.jar;C:\Users\PC\.m2\repository\org\mongodb\mongodb-driver-core\3.6.4\mongodb-driver-core-3.6.4.jar;C:\Users\PC\.m2\repository\org\mongodb\bson\3.6.4\bson-3.6.4.jar;C:\Users\PC\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\PC\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\PC\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\PC\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\PC\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\PC\.m2\repository\tech\grasshopper\htmlextentreporter\1.1.0\htmlextentreporter-1.1.0.jar;C:\Users\PC\.m2\repository\tech\grasshopper\extent-excel-report\1.4.0\extent-excel-report-1.4.0.jar;C:\Users\PC\.m2\repository\org\apache\poi\poi\5.2.3\poi-5.2.3.jar;C:\Users\PC\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\PC\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\PC\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\PC\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\PC\.m2\repository\org\apache\logging\log4j\log4j-api\2.18.0\log4j-api-2.18.0.jar;C:\Users\PC\.m2\repository\org\apache\poi\poi-ooxml\5.2.3\poi-ooxml-5.2.3.jar;C:\Users\PC\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.3\poi-ooxml-lite-5.2.3.jar;C:\Users\PC\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\Users\PC\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\PC\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Users\PC\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.9.v20231028-0858\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\PC\AppData\Local\Temp\surefire15248797232274014242\surefirebooter-20240102161228092_3.jar C:\Users\PC\AppData\Local\Temp\surefire15248797232274014242 2024-01-02T16-12-27_582-jvmRun1 surefire-20240102161228092_1tmp surefire_0-20240102161228092_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\PC\eclipse-workspace\phase2-bdd-cucumber-maven-test-27-12-2023\target\test-classes;C:\Users\PC\eclipse-workspace\phase2-bdd-cucumber-maven-test-27-12-2023\target\classes;C:\Users\PC\.m2\repository\io\cucumber\cucumber-java\7.15.0\cucumber-java-7.15.0.jar;C:\Users\PC\.m2\repository\io\cucumber\cucumber-core\7.15.0\cucumber-core-7.15.0.jar;C:\Users\PC\.m2\repository\io\cucumber\cucumber-gherkin\7.15.0\cucumber-gherkin-7.15.0.jar;C:\Users\PC\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.15.0\cucumber-gherkin-messages-7.15.0.jar;C:\Users\PC\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\PC\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\PC\.m2\repository\io\cucumber\tag-expressions\6.0.0\tag-expressions-6.0.0.jar;C:\Users\PC\.m2\repository\io\cucumber\cucumber-expressions\17.0.1\cucumber-expressions-17.0.1.jar;C:\Users\PC\.m2\repository\io\cucumber\datatable\7.15.0\datatable-7.15.0.jar;C:\Users\PC\.m2\repository\io\cucumber\cucumber-plugin\7.15.0\cucumber-plugin-7.15.0.jar;C:\Users\PC\.m2\repository\io\cucumber\docstring\7.15.0\docstring-7.15.0.jar;C:\Users\PC\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\PC\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\PC\.m2\repository\io\cucumber\ci-environment\10.0.0\ci-environment-10.0.0.jar;C:\Users\PC\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\PC\.m2\repository\io\cucumber\cucumber-junit\7.15.0\cucumber-junit-7.15.0.jar;C:\Users\PC\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\PC\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-java\4.15.0\selenium-java-4.15.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-api\4.15.0\selenium-api-4.15.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.15.0\selenium-chrome-driver-4.15.0.jar;C:\Users\PC\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.15.0\selenium-chromium-driver-4.15.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-json\4.15.0\selenium-json-4.15.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.15.0\selenium-manager-4.15.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v117\4.15.0\selenium-devtools-v117-4.15.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v118\4.15.0\selenium-devtools-v118-4.15.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v119\4.15.0\selenium-devtools-v119-4.15.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.15.0\selenium-devtools-v85-4.15.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.15.0\selenium-edge-driver-4.15.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.15.0\selenium-firefox-driver-4.15.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-http\4.15.0\selenium-http-4.15.0.jar;C:\Users\PC\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.15.0\selenium-ie-driver-4.15.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.15.0\selenium-remote-driver-4.15.0.jar;C:\Users\PC\.m2\repository\com\google\guava\guava\32.1.2-jre\guava-32.1.2-jre.jar;C:\Users\PC\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\PC\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\PC\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\PC\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\PC\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\PC\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-api\1.28.0\opentelemetry-api-1.28.0.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-context\1.28.0\opentelemetry-context-1.28.0.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.28.0\opentelemetry-exporter-logging-1.28.0.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.28.0\opentelemetry-sdk-metrics-1.28.0.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.28.0-alpha\opentelemetry-extension-incubator-1.28.0-alpha.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.28.0\opentelemetry-sdk-logs-1.28.0.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.28.0\opentelemetry-sdk-common-1.28.0.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.28.0\opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.28.0\opentelemetry-sdk-extension-autoconfigure-1.28.0.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.28.0-alpha\opentelemetry-api-events-1.28.0-alpha.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.28.0\opentelemetry-sdk-trace-1.28.0.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.28.0\opentelemetry-sdk-1.28.0.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\PC\.m2\repository\net\bytebuddy\byte-buddy\1.14.5\byte-buddy-1.14.5.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-os\4.15.0\selenium-os-4.15.0.jar;C:\Users\PC\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.15.0\selenium-safari-driver-4.15.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-support\4.15.0\selenium-support-4.15.0.jar;C:\Users\PC\.m2\repository\com\vimalselvam\cucumber-extentsreport\3.0.2\cucumber-extentsreport-3.0.2.jar;C:\Users\PC\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\PC\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\PC\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\PC\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\PC\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\PC\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\PC\.m2\repository\tech\grasshopper\extentreports-cucumber7-adapter\1.14.0\extentreports-cucumber7-adapter-1.14.0.jar;C:\Users\PC\.m2\repository\tech\grasshopper\extent-pdf-report\2.12.0\extent-pdf-report-2.12.0.jar;C:\Users\PC\.m2\repository\tech\grasshopper\cucumber-pdf-report\2.14.0\cucumber-pdf-report-2.14.0.jar;C:\Users\PC\.m2\repository\org\apache\pdfbox\pdfbox\2.0.26\pdfbox-2.0.26.jar;C:\Users\PC\.m2\repository\org\apache\pdfbox\fontbox\2.0.26\fontbox-2.0.26.jar;C:\Users\PC\.m2\repository\org\knowm\xchart\xchart\3.8.0\xchart-3.8.0.jar;C:\Users\PC\.m2\repository\de\erichseifert\vectorgraphics2d\VectorGraphics2D\0.13\VectorGraphics2D-0.13.jar;C:\Users\PC\.m2\repository\de\rototor\pdfbox\graphics2d\0.30\graphics2d-0.30.jar;C:\Users\PC\.m2\repository\com\madgag\animated-gif-lib\1.4\animated-gif-lib-1.4.jar;C:\Users\PC\.m2\repository\org\yaml\snakeyaml\2.0\snakeyaml-2.0.jar;C:\Users\PC\.m2\repository\tech\grasshopper\table-layout\1.5.1\table-layout-1.5.1.jar;C:\Users\PC\.m2\repository\tech\grasshopper\rest-assured-cucumber-pdf-report\1.5.0\rest-assured-cucumber-pdf-report-1.5.0.jar;C:\Users\PC\.m2\repository\org\jsoup\jsoup\1.15.3\jsoup-1.15.3.jar;C:\Users\PC\.m2\repository\com\aventstack\klov-reporter\5.1.0\klov-reporter-5.1.0.jar;C:\Users\PC\.m2\repository\org\mongodb\mongodb-driver\3.6.4\mongodb-driver-3.6.4.jar;C:\Users\PC\.m2\repository\org\mongodb\mongodb-driver-core\3.6.4\mongodb-driver-core-3.6.4.jar;C:\Users\PC\.m2\repository\org\mongodb\bson\3.6.4\bson-3.6.4.jar;C:\Users\PC\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\PC\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\PC\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\PC\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\PC\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\PC\.m2\repository\tech\grasshopper\htmlextentreporter\1.1.0\htmlextentreporter-1.1.0.jar;C:\Users\PC\.m2\repository\tech\grasshopper\extent-excel-report\1.4.0\extent-excel-report-1.4.0.jar;C:\Users\PC\.m2\repository\org\apache\poi\poi\5.2.3\poi-5.2.3.jar;C:\Users\PC\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\PC\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\PC\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\PC\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\PC\.m2\repository\org\apache\logging\log4j\log4j-api\2.18.0\log4j-api-2.18.0.jar;C:\Users\PC\.m2\repository\org\apache\poi\poi-ooxml\5.2.3\poi-ooxml-5.2.3.jar;C:\Users\PC\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.3\poi-ooxml-lite-5.2.3.jar;C:\Users\PC\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\Users\PC\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\PC\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\PC"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-10-17"/>
+    <property name="java.home" value="C:\Users\PC\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.9.v20231028-0858\jre"/>
+    <property name="file.separator" value="\"/>
+    <property name="style.color" value="always"/>
+    <property name="basedir" value="C:\Users\PC\eclipse-workspace\phase2-bdd-cucumber-maven-test-27-12-2023"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\PC\AppData\Local\Temp\surefire15248797232274014242\surefirebooter-20240102161228092_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.9+9"/>
+    <property name="user.name" value="PC"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-17.0.9+9"/>
+    <property name="localRepository" value="C:\Users\PC\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\PC\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.9"/>
+    <property name="user.dir" value="C:\Users\PC\eclipse-workspace\phase2-bdd-cucumber-maven-test-27-12-2023"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\PC\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.9.v20231028-0858\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-17;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\PC\AppData\Local\Microsoft\WindowsApps;;C:\Users\PC\AppData\Local\Programs\Microsoft VS Code\bin;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="17.0.9+9"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name=": Search a product and add the first result/product to the User basket" classname="Add to Cart" time="0.147">
+    <error message="The step &apos;User search for a product &quot;Lenovo Laptop&quot;&apos; and 3 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@Given(&quot;User search for a product {string}&quot;)&#10;public void user_search_for_a_product(String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;Add the first laptop that apears in the search results to the basket&quot;)&#10;public void add_the_first_laptop_that_apears_in_the_search_results_to_the_basket() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;User clicks on {string} link&quot;)&#10;public void user_clicks_on_link(String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;User basket should display added {int} items&quot;)&#10;public void user_basket_should_display_added_items(Integer int1) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException"><![CDATA[io.cucumber.junit.UndefinedStepException: 
+The step 'User search for a product "Lenovo Laptop"' and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("User search for a product {string}")
+public void user_search_for_a_product(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("Add the first laptop that apears in the search results to the basket")
+public void add_the_first_laptop_that_apears_in_the_search_results_to_the_basket() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User clicks on {string} link")
+public void user_clicks_on_link(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("User basket should display added {int} items")
+public void user_basket_should_display_added_items(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+]]></error>
+    <system-out><![CDATA[-- This will run before the Scenario --
+-- Before step --
+-- After step --
+-- This will run after the Scenario --
+]]></system-out>
+  </testcase>
+  <testcase name="Amazon Homepage title verification" classname="Amazon Homepage Test" time="3.398">
+    <system-out><![CDATA[-- This will run before the Scenario --
+-- Before step --
+-- After step --
+-- Before step --
+-- After step --
+-- Before step --
+-- After step --
+-- This will run after the Scenario --
+]]></system-out>
+    <system-err><![CDATA[Jan 02, 2024 4:12:32 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 120, returning the closest version; found: 119; Please update to a Selenium version that supports CDP version 120
+]]></system-err>
+  </testcase>
+  <testcase name="Should not be Amazon Homepage" classname="Amazon Homepage Test" time="4.6">
+    <system-out><![CDATA[-- This will run before the Scenario --
+-- Before step --
+-- After step --
+-- Before step --
+-- After step --
+-- Before step --
+-- After step --
+-- This will run after the Scenario --
+]]></system-out>
+    <system-err><![CDATA[Jan 02, 2024 4:12:34 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 120, returning the closest version; found: 119; Please update to a Selenium version that supports CDP version 120
+]]></system-err>
+  </testcase>
+  <testcase name="Verification of search feature button with numbers of products" classname="Search products on Amazon #1" time="56.211">
+    <system-out><![CDATA[-- This will run before the Scenario --
+-- Before step --
+-- After step --
+-- Before step --
+>>>>>>>>>>>>[{name=Iphone 15 pro max, title=Amazon.in : Iphone 15 pro max}, {name=Apple Mac book, title=Amazon.in : Apple Mac book}]
+-- After step --
+-- Before step --
+-- After step --
+-- Before step --
+-- After step --
+-- This will run after the Scenario --
+]]></system-out>
+    <system-err><![CDATA[Jan 02, 2024 4:12:39 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 120, returning the closest version; found: 119; Please update to a Selenium version that supports CDP version 120
+]]></system-err>
+  </testcase>
+  <testcase name="Search feature Test with multiple of products #1" classname="Search products on Amazon #2" time="11.749">
+    <system-out><![CDATA[-- This will run before the Scenario --
+-- Before step --
+-- After step --
+-- Before step --
+-- After step --
+-- Before step --
+-- After step --
+-- Before step --
+-- After step --
+-- This will run after the Scenario --
+]]></system-out>
+    <system-err><![CDATA[Jan 02, 2024 4:13:35 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 120, returning the closest version; found: 119; Please update to a Selenium version that supports CDP version 120
+]]></system-err>
+  </testcase>
+  <testcase name="Search feature Test with multiple of products #2" classname="Search products on Amazon #2" time="10.835">
+    <system-out><![CDATA[-- This will run before the Scenario --
+-- Before step --
+-- After step --
+-- Before step --
+-- After step --
+-- Before step --
+-- After step --
+-- Before step --
+-- After step --
+-- This will run after the Scenario --
+]]></system-out>
+    <system-err><![CDATA[Jan 02, 2024 4:13:47 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 120, returning the closest version; found: 119; Please update to a Selenium version that supports CDP version 120
+]]></system-err>
+  </testcase>
+  <testcase name="Unsuccessful Verification of Login functionality" classname="Facebook Login Verification #1" time="0.017">
+    <error message="Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
+	at bddtest.stepdefinitions.FacebookLoginSteps.i_should_be_on_the_facebook_login_page(FacebookLoginSteps.java:39)
+	at ✽.I should be on the facebook login page(file:///C:/Users/PC/eclipse-workspace/phase2-bdd-cucumber-maven-test-27-12-2023/src/test/resources/Features/facebook-login.feature:6)
+]]></error>
+    <system-out><![CDATA[-- This will run before the Scenario --
+-- Before step --
+-- After step --
+-- This will run after the Scenario --
+]]></system-out>
+  </testcase>
+  <testcase name="Unsuccessful Verification of Login functionality #1" classname="Facebook Login Verification #2" time="6.374">
+    <system-out><![CDATA[-- This will run before the Scenario --
+-- Before step --
+-- After step --
+-- Before step --
+-- After step --
+-- Before step --
+-- After step --
+-- Before step --
+-- After step --
+-- Before step --
+This step: error message displayed with wrong Credentials
+-- After step --
+-- Before step --
+-- After step --
+-- This will run after the Scenario --
+]]></system-out>
+    <system-err><![CDATA[Jan 02, 2024 4:13:57 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 120, returning the closest version; found: 119; Please update to a Selenium version that supports CDP version 120
+]]></system-err>
+  </testcase>
+  <testcase name="Unsuccessful Verification of Login functionality #2" classname="Facebook Login Verification #2" time="7.082">
+    <system-out><![CDATA[-- This will run before the Scenario --
+-- Before step --
+-- After step --
+-- Before step --
+-- After step --
+-- Before step --
+-- After step --
+-- Before step --
+-- After step --
+-- Before step --
+This step: error message displayed with wrong Credentials
+-- After step --
+-- Before step --
+-- After step --
+-- This will run after the Scenario --
+]]></system-out>
+    <system-err><![CDATA[Jan 02, 2024 4:14:04 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 120, returning the closest version; found: 119; Please update to a Selenium version that supports CDP version 120
+]]></system-err>
+  </testcase>
+  <testcase name="Unsuccessful Verification of Login functionality #3" classname="Facebook Login Verification #2" time="6.136">
+    <system-out><![CDATA[-- This will run before the Scenario --
+-- Before step --
+-- After step --
+-- Before step --
+-- After step --
+-- Before step --
+-- After step --
+-- Before step --
+-- After step --
+-- Before step --
+This step: error message displayed with wrong Credentials
+-- After step --
+-- Before step --
+-- After step --
+-- This will run after the Scenario --
+]]></system-out>
+    <system-err><![CDATA[Jan 02, 2024 4:14:11 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 120, returning the closest version; found: 119; Please update to a Selenium version that supports CDP version 120
+]]></system-err>
+  </testcase>
+  <testcase name="Title of your 1st scenario" classname="Title of your feature" time="0.011">
+    <system-out><![CDATA[-- Before Tag1 Scenario --
+-- Before Tag11 Scenario --
+-- This will run before the Scenario --
+-- Before step --
+Steps : 1
+-- After step --
+-- Before step --
+Steps : 2
+-- After step --
+-- Before step --
+Steps : 3
+-- After step --
+-- Before step --
+Steps : 4
+-- After step --
+-- Before step --
+Steps : 5
+-- After step --
+-- This will run after the Scenario --
+-- After Tag1 Scenario --
+]]></system-out>
+  </testcase>
+  <testcase name="Title of your 2nd scenario" classname="Title of your feature" time="0.008">
+    <system-out><![CDATA[-- Before Tag 2 or 3 Scenario --
+-- This will run before the Scenario --
+-- Before step --
+Steps : 1
+-- After step --
+-- Before step --
+Steps : 2
+-- After step --
+-- Before step --
+Steps : 3
+-- After step --
+-- Before step --
+Steps : 4
+-- After step --
+-- Before step --
+Steps : 5
+-- After step --
+-- This will run after the Scenario --
+-- After Tag 2 or 3 Scenario --
+]]></system-out>
+  </testcase>
+  <testcase name="Title of your 3nd scenario" classname="Title of your feature" time="0.011">
+    <system-out><![CDATA[-- Before Tag 2 or 3 Scenario --
+-- This will run before the Scenario --
+-- Before step --
+Steps : 1
+-- After step --
+-- Before step --
+Steps : 2
+-- After step --
+-- Before step --
+Steps : 3
+-- After step --
+-- Before step --
+Steps : 4
+-- After step --
+-- Before step --
+Steps : 5
+-- After step --
+-- This will run after the Scenario --
+-- After Tag 2 or 3 Scenario --
+]]></system-out>
+  </testcase>
+  <testcase name="Title of your scenario outline #1" classname="Test Hooks with Senario Outline" time="0.008">
+    <system-out><![CDATA[-- This will run before the Scenario --
+-- Before step --
+Steps : 1
+-- After step --
+-- Before step --
+Steps : 2
+-- After step --
+-- Before step --
+Steps : 3
+-- After step --
+-- Before step --
+Steps : 4
+-- After step --
+-- Before step --
+Steps : 5
+-- After step --
+-- This will run after the Scenario --
+]]></system-out>
+  </testcase>
+  <testcase name="Title of your scenario outline #2" classname="Test Hooks with Senario Outline" time="0.01">
+    <system-out><![CDATA[-- This will run before the Scenario --
+-- Before step --
+Steps : 1
+-- After step --
+-- Before step --
+Steps : 2
+-- After step --
+-- Before step --
+Steps : 3
+-- After step --
+-- Before step --
+Steps : 4
+-- After step --
+-- Before step --
+Steps : 5
+-- After step --
+-- This will run after the Scenario --
+]]></system-out>
+  </testcase>
+  <testcase name="Title of your scenario outline #3" classname="Test Hooks with Senario Outline" time="0.009">
+    <system-out><![CDATA[-- This will run before the Scenario --
+-- Before step --
+Steps : 1
+-- After step --
+-- Before step --
+Steps : 2
+-- After step --
+-- Before step --
+Steps : 3
+-- After step --
+-- Before step --
+Steps : 4
+-- After step --
+-- Before step --
+Steps : 5
+-- After step --
+-- This will run after the Scenario --
+]]></system-out>
+  </testcase>
+  <testcase name="Successfull Verification of Login functionality" classname="Login" time="0.009">
+    <system-out><![CDATA[-- This will run before the Scenario --
+-- Before step --
+This step : user should be on the login page.
+-- After step --
+-- Before step --
+This step : user enters email adress.
+-- After step --
+-- Before step --
+This step : user clicks login button
+-- After step --
+-- Before step --
+This step : user should navigate to My Account
+-- After step --
+-- This will run after the Scenario --
+]]></system-out>
+  </testcase>
+  <testcase name="Valid Credentials for login" classname="Login" time="0.011">
+    <system-out><![CDATA[-- This will run before the Scenario --
+-- Before step --
+This step : User want to enter valid ceredntials
+-- After step --
+-- Before step --
+This step : user check for email and password fields
+-- After step --
+-- Before step --
+This step : user enters following details
+-- After step --
+-- Before step --
+This step : user clicks login button
+-- After step --
+-- This will run after the Scenario --
+]]></system-out>
+  </testcase>
+  <testcase name="Unsuccessful Verification of Login functionality" classname="Login" time="0.009">
+    <system-out><![CDATA[-- This will run before the Scenario --
+-- Before step --
+This step : user should be on the login page.
+-- After step --
+-- Before step --
+This step : user enters email adress.
+-- After step --
+-- Before step --
+user enters password
+-- After step --
+-- Before step --
+This step : user clicks login button
+-- After step --
+-- Before step --
+This step: error message displayed with wrong Credentials
+-- After step --
+-- Before step --
+This step : user returns back on the login page
+-- After step --
+-- This will run after the Scenario --
+]]></system-out>
+  </testcase>
+  <testcase name="Create a New User" classname="Registration" time="0.024">
+    <error message="The step &apos;user on the homepage&apos; and 8 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@Given(&quot;user on the homepage&quot;)&#10;public void user_on_the_homepage() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Given(&quot;user follow {string} button&quot;)&#10;public void user_follow_button(String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Given(&quot;user should be on the registation page&quot;)&#10;public void user_should_be_on_the_registation_page() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;user fills  registration {string} with {string}&quot;)&#10;public void user_fills_registration_with(String string, String string2) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;user fills registration {string} with {string}&quot;)&#10;public void user_fills_registration_with(String string, String string2) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;user clicks {string} button&quot;)&#10;public void user_clicks_button(String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;User is created Successfully&quot;)&#10;public void user_is_created_successfully() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;user return back on registration page&quot;)&#10;public void user_return_back_on_registration_page() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException"><![CDATA[io.cucumber.junit.UndefinedStepException: 
+The step 'user on the homepage' and 8 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("user on the homepage")
+public void user_on_the_homepage() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user follow {string} button")
+public void user_follow_button(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user should be on the registation page")
+public void user_should_be_on_the_registation_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user fills  registration {string} with {string}")
+public void user_fills_registration_with(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user fills registration {string} with {string}")
+public void user_fills_registration_with(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user clicks {string} button")
+public void user_clicks_button(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("User is created Successfully")
+public void user_is_created_successfully() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user return back on registration page")
+public void user_return_back_on_registration_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+]]></error>
+    <system-out><![CDATA[-- This will run before the Scenario --
+-- Before step --
+-- After step --
+-- This will run after the Scenario --
+]]></system-out>
+  </testcase>
+  <testcase name="User does not follow form validation" classname="Registration" time="0.017">
+    <error message="The step &apos;user on the homepage&apos; and 5 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@Given(&quot;user on the homepage&quot;)&#10;public void user_on_the_homepage() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Given(&quot;user follow {string} button&quot;)&#10;public void user_follow_button(String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Given(&quot;user should be on the registation page&quot;)&#10;public void user_should_be_on_the_registation_page() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;user enters wrong characters&quot;)&#10;public void user_enters_wrong_characters() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;error message displayed with invalid password&quot;)&#10;public void error_message_displayed_with_invalid_password() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;user return back on registration page&quot;)&#10;public void user_return_back_on_registration_page() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException"><![CDATA[io.cucumber.junit.UndefinedStepException: 
+The step 'user on the homepage' and 5 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("user on the homepage")
+public void user_on_the_homepage() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user follow {string} button")
+public void user_follow_button(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user should be on the registation page")
+public void user_should_be_on_the_registation_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user enters wrong characters")
+public void user_enters_wrong_characters() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("error message displayed with invalid password")
+public void error_message_displayed_with_invalid_password() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user return back on registration page")
+public void user_return_back_on_registration_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+]]></error>
+    <system-out><![CDATA[-- This will run before the Scenario --
+-- Before step --
+-- After step --
+-- This will run after the Scenario --
+]]></system-out>
+  </testcase>
+  <testcase name="Verification of reset button with numbers of credential" classname="Reset Login Form" time="9.68">
+    <system-out><![CDATA[-- This will run before the Scenario --
+-- Before step --
+-- After step --
+-- Before step --
+-- After step --
+-- Before step --
+Credentials Entered
+-- After step --
+-- Before step --
+-- After step --
+-- This will run after the Scenario --
+]]></system-out>
+    <system-err><![CDATA[Jan 02, 2024 4:14:17 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 120, returning the closest version; found: 119; Please update to a Selenium version that supports CDP version 120
+]]></system-err>
+  </testcase>
+  <testcase name="Successfull Reset Password erification" classname="Reset Password" time="0.02">
+    <error message="The step &apos;user should be on the logged In&apos; and 4 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@Given(&quot;user should be on the logged In&quot;)&#10;public void user_should_be_on_the_logged_in() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Given(&quot;user navigate to reset password page {string}&quot;)&#10;public void user_navigate_to_reset_password_page(String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Given(&quot;user clicks {string} button&quot;)&#10;public void user_clicks_button(String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;user ask to reset my password&quot;)&#10;public void user_ask_to_reset_my_password() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;user should review an email with:&quot;)&#10;public void user_should_review_an_email_with(String docString) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException"><![CDATA[io.cucumber.junit.UndefinedStepException: 
+The step 'user should be on the logged In' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("user should be on the logged In")
+public void user_should_be_on_the_logged_in() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user navigate to reset password page {string}")
+public void user_navigate_to_reset_password_page(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user clicks {string} button")
+public void user_clicks_button(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user ask to reset my password")
+public void user_ask_to_reset_my_password() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user should review an email with:")
+public void user_should_review_an_email_with(String docString) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+]]></error>
+    <system-out><![CDATA[-- This will run before the Scenario --
+-- Before step --
+-- After step --
+-- This will run after the Scenario --
+]]></system-out>
+  </testcase>
+  <testcase name="Valid Credentials for login" classname="Reset Password" time="0.013">
+    <error message="The step &apos;user check for &quot;email&quot; and &quot;password&quot; fields&apos; and 1 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@When(&quot;user check for {string} and {string} fields&quot;)&#10;public void user_check_for_and_fields(String string, String string2) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;user clicks {string} button&quot;)&#10;public void user_clicks_button(String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException"><![CDATA[io.cucumber.junit.UndefinedStepException: 
+The step 'user check for "email" and "password" fields' and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When("user check for {string} and {string} fields")
+public void user_check_for_and_fields(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user clicks {string} button")
+public void user_clicks_button(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+]]></error>
+    <system-out><![CDATA[-- This will run before the Scenario --
+-- Before step --
+This step : User want to enter valid ceredntials
+-- After step --
+-- Before step --
+-- After step --
+-- This will run after the Scenario --
+]]></system-out>
+  </testcase>
+  <testcase name="Unsuccessful Verification of Login functionality" classname="Reset Password" time="0.015">
+    <error message="The step &apos;user clicks &quot;login in&quot; button&apos; is undefined.&#10;You can implement this step using the snippet(s) below:&#10;&#10;@Given(&quot;user clicks {string} button&quot;)&#10;public void user_clicks_button(String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException"><![CDATA[io.cucumber.junit.UndefinedStepException: 
+The step 'user clicks "login in" button' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Given("user clicks {string} button")
+public void user_clicks_button(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+]]></error>
+    <system-out><![CDATA[-- This will run before the Scenario --
+-- Before step --
+This step : user should be on the login page.
+-- After step --
+-- Before step --
+This step : user enters email adress.
+-- After step --
+-- Before step --
+user enters password
+-- After step --
+-- Before step --
+-- After step --
+-- This will run after the Scenario --
+]]></system-out>
+  </testcase>
+  <testcase name="Successfull Login Verification" classname="Login Feature" time="1.744">
+    <system-out><![CDATA[-- This will run before the Scenario --
+-- Before step --
+-- After step --
+-- Before step --
+-- After step --
+-- Before step --
+-- After step --
+-- Before step --
+-- After step --
+-- Before step --
+-- After step --
+-- This will run after the Scenario --
+]]></system-out>
+    <system-err><![CDATA[Jan 02, 2024 4:14:27 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 120, returning the closest version; found: 119; Please update to a Selenium version that supports CDP version 120
+]]></system-err>
+  </testcase>
+  <testcase name="Successful Login" classname="Ecommerce Web Application" time="0.006">
+    <system-out><![CDATA[-- This will run before the Scenario --
+-- Before step --
+-- Test logic --
+-- After step --
+-- This will run after the Scenario --
+]]></system-out>
+  </testcase>
+  <testcase name="UnSuccessful Login" classname="Ecommerce Web Application" time="0.007">
+    <system-out><![CDATA[-- This will run before the Scenario --
+-- Before step --
+-- Test logic --
+-- After step --
+-- This will run after the Scenario --
+]]></system-out>
+  </testcase>
+  <testcase name="Add a product to bag" classname="Ecommerce Web Application" time="0.005">
+    <system-out><![CDATA[-- This will run before the Scenario --
+-- Before step --
+-- Test logic --
+-- After step --
+-- This will run after the Scenario --
+]]></system-out>
+  </testcase>
+  <testcase name="Add multiple product to bag" classname="Ecommerce Web Application" time="0.005">
+    <system-out><![CDATA[-- This will run before the Scenario --
+-- Before step --
+-- Test logic --
+-- After step --
+-- This will run after the Scenario --
+]]></system-out>
+  </testcase>
+  <testcase name="Remove a product from bag" classname="Ecommerce Web Application" time="0.005">
+    <system-out><![CDATA[-- This will run before the Scenario --
+-- Before step --
+-- Test logic --
+-- After step --
+-- This will run after the Scenario --
+]]></system-out>
+  </testcase>
+  <testcase name="Remove all products from bag" classname="Ecommerce Web Application" time="0.007">
+    <system-out><![CDATA[-- This will run before the Scenario --
+-- Before step --
+-- Test logic --
+-- After step --
+-- This will run after the Scenario --
+]]></system-out>
+  </testcase>
+  <testcase name="product quantity from bag page" classname="Ecommerce Web Application" time="0.004">
+    <system-out><![CDATA[-- This will run before the Scenario --
+-- Before step --
+-- Test logic --
+-- After step --
+-- This will run after the Scenario --
+]]></system-out>
+  </testcase>
+  <testcase name="Decrease product quantity from bag page" classname="Ecommerce Web Application" time="0.01">
+    <system-out><![CDATA[-- This will run before the Scenario --
+-- Before step --
+-- Test logic --
+-- After step --
+-- This will run after the Scenario --
+]]></system-out>
+  </testcase>
+  <testcase name="Buy a product with cash payment" classname="Ecommerce Web Application" time="0.004">
+    <system-out><![CDATA[-- This will run before the Scenario --
+-- Before step --
+-- Test logic --
+-- After step --
+-- This will run after the Scenario --
+]]></system-out>
+  </testcase>
+  <testcase name="Buy a product with CC payment" classname="Ecommerce Web Application" time="0.005">
+    <system-out><![CDATA[-- This will run before the Scenario --
+-- Before step --
+-- Test logic --
+-- After step --
+-- This will run after the Scenario --
+]]></system-out>
+  </testcase>
+  <testcase name="Payment declined #1" classname="Ecommerce Web Application" time="0.004">
+    <system-out><![CDATA[-- This will run before the Scenario --
+-- Before step --
+-- Test logic --
+-- After step --
+-- This will run after the Scenario --
+]]></system-out>
+  </testcase>
+  <testcase name="Payment declined #2" classname="Ecommerce Web Application" time="0.004">
+    <system-out><![CDATA[-- This will run before the Scenario --
+-- Before step --
+-- Test logic --
+-- After step --
+-- This will run after the Scenario --
+]]></system-out>
+  </testcase>
+  <testcase name="Payment declined #3" classname="Ecommerce Web Application" time="0.011">
+    <system-out><![CDATA[-- This will run before the Scenario --
+-- Before step --
+-- Test logic --
+-- After step --
+-- This will run after the Scenario --
+]]></system-out>
+  </testcase>
+  <testcase name="Payment declined #4" classname="Ecommerce Web Application" time="0.002">
+    <system-out><![CDATA[-- This will run before the Scenario --
+-- Before step --
+-- Test logic --
+-- After step --
+-- This will run after the Scenario --
+]]></system-out>
+  </testcase>
+  <testcase name="Payment declined #5" classname="Ecommerce Web Application" time="0.004">
+    <system-out><![CDATA[-- This will run before the Scenario --
+-- Before step --
+-- Test logic --
+-- After step --
+-- This will run after the Scenario --
+]]></system-out>
+  </testcase>
+</testsuite>

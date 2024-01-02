@@ -1,0 +1,181 @@
+-------------------------------------------------------------------------------
+Test set: bddtest.testrunner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 41, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 119.2 s <<< FAILURE! -- in bddtest.testrunner.TestRunner
+Add to Cart.: Search a product and add the first result/product to the User basket -- Time elapsed: 0.147 s <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'User search for a product "Lenovo Laptop"' and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("User search for a product {string}")
+public void user_search_for_a_product(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("Add the first laptop that apears in the search results to the basket")
+public void add_the_first_laptop_that_apears_in_the_search_results_to_the_basket() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User clicks on {string} link")
+public void user_clicks_on_link(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("User basket should display added {int} items")
+public void user_basket_should_display_added_items(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Facebook Login Verification #1.Unsuccessful Verification of Login functionality -- Time elapsed: 0.017 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
+	at bddtest.stepdefinitions.FacebookLoginSteps.i_should_be_on_the_facebook_login_page(FacebookLoginSteps.java:39)
+	at ✽.I should be on the facebook login page(file:///C:/Users/PC/eclipse-workspace/phase2-bdd-cucumber-maven-test-27-12-2023/src/test/resources/Features/facebook-login.feature:6)
+
+Registration.Create a New User -- Time elapsed: 0.024 s <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'user on the homepage' and 8 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("user on the homepage")
+public void user_on_the_homepage() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user follow {string} button")
+public void user_follow_button(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user should be on the registation page")
+public void user_should_be_on_the_registation_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user fills  registration {string} with {string}")
+public void user_fills_registration_with(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user fills registration {string} with {string}")
+public void user_fills_registration_with(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user clicks {string} button")
+public void user_clicks_button(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("User is created Successfully")
+public void user_is_created_successfully() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user return back on registration page")
+public void user_return_back_on_registration_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Registration.User does not follow form validation -- Time elapsed: 0.017 s <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'user on the homepage' and 5 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("user on the homepage")
+public void user_on_the_homepage() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user follow {string} button")
+public void user_follow_button(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user should be on the registation page")
+public void user_should_be_on_the_registation_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user enters wrong characters")
+public void user_enters_wrong_characters() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("error message displayed with invalid password")
+public void error_message_displayed_with_invalid_password() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user return back on registration page")
+public void user_return_back_on_registration_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Reset Password.Successfull Reset Password erification -- Time elapsed: 0.020 s <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'user should be on the logged In' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("user should be on the logged In")
+public void user_should_be_on_the_logged_in() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user navigate to reset password page {string}")
+public void user_navigate_to_reset_password_page(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("user clicks {string} button")
+public void user_clicks_button(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user ask to reset my password")
+public void user_ask_to_reset_my_password() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user should review an email with:")
+public void user_should_review_an_email_with(String docString) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Reset Password.Valid Credentials for login -- Time elapsed: 0.013 s <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'user check for "email" and "password" fields' and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When("user check for {string} and {string} fields")
+public void user_check_for_and_fields(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user clicks {string} button")
+public void user_clicks_button(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Reset Password.Unsuccessful Verification of Login functionality -- Time elapsed: 0.015 s <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'user clicks "login in" button' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Given("user clicks {string} button")
+public void user_clicks_button(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+

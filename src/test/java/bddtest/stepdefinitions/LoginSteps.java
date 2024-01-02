@@ -56,10 +56,7 @@ public class LoginSteps {
 
 	}
 
-//	@Then("error message displayed with wrong Credentials")
-//	public void error_message_displayed_with_wrong_credentials() {
-//	   System.out.println("This step: error message displayed with wrong Credentials");
-//	}
+
 
 
 	@Then("user returns back on the login page")
